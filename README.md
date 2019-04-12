@@ -10,8 +10,6 @@ Options:
 
 -Add info
 
--Add how to build Azure blob storage
-
 -Add how to mount
 
 # Setup Suricata on host to monitor
@@ -19,6 +17,8 @@ Options:
 -Add info
 
 -Add how to mount to Azure blob storage
+
+-Add configurations
 
 
 
