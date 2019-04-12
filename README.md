@@ -1,6 +1,11 @@
 # SELKS-probe
 SELKS probe for Azure
 
+Options:
+-daemonlogger
+-rpcap
+-Suricata
+
 # Setup Azure Blob Storage
 
 -Add info
