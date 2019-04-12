@@ -6,6 +6,9 @@ Options:
 -rpcap
 -Suricata
 
+Add ansible scripts to reboot/update probes.
+
+
 # Setup Azure Blob Storage
 
 -Add info
