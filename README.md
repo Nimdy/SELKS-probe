@@ -8,6 +8,15 @@ Options:
 
 Add ansible scripts to reboot/update probes.
 
+Quick and dirty, more to come:
+
+In a nutshell: Install a lightweight server (CentOS or Ubuntu), this is required because of the SMB3 requirements. Currently SELKS is built on Debian 9 but the kernal at this time, does not support SMB3.
+
+After you have install the Linux OS, install filebeat:
+
+https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation.html
+
+Configure filebeat.yml with this following information: ( I will add my configs later, basically point it to SELKS logstash server for processing and configure the SMB3 file share paths.  These paths will be determined during your mounting step to the file share in Azure )
 
 # Setup Azure file share storage
 
