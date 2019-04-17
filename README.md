@@ -34,7 +34,7 @@ Add ansible scripts to reboot/update probes.
 
 Quick and dirty, more to come:
 
-In a nutshell: Install a lightweight server (CentOS or Ubuntu), this is required because of the SMB3 requirements and if you want more security, then SMB3>SMB2+. Currently SELKS is built on Debian 9 but the kernal at this time, does not support SMB3.
+In a nutshell: Install a lightweight server (CentOS or Ubuntu), this is required because of the SMB3 requirements and if you want more security, then SMB3>SMB2+. Currently SELKS is built on Debian 9 but the kernel at this time, does not support SMB3.
 
 After you have install the Linux OS, install Suricata(CentOs or Ubuntu):
 
