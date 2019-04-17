@@ -9,11 +9,15 @@ Options:
 Add ansible scripts to reboot/update probes.
 
 
-# Setup Azure Blob Storage
+# Setup Azure file share storage
 
--Add info
+First thing we need to do is setup the storage area for all of our pcap or json files.  Later we will use filebeat and connect to the file share storage and ship those files to logstash for processing into elasticsearch.
 
--Add how to mount
+Follow this how-to from Microsoft:
+
+https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-share
+
+
 
 # Setup Suricata on host to monitor
 
