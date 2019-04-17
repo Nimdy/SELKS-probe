@@ -30,11 +30,11 @@ https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-
 
 # Setup Suricata on host to monitor
 
--Add info
+-Add info about installing Suricata as a probe (pcap or meta data only or both)
 
--Add how to mount to Azure blob storage
+-Add how to mount to Azure file share storage and dump all files to the file share.
 
--Add configurations
+-Add configuration files
 
 
 
@@ -42,6 +42,6 @@ https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-
 
 -Add info
 
--Add how to mount to blob storage
+-Add how to mount to file share storage
 
--Add configurations
+-Add configurations examples to collect all logs and push to SELKS logstash.
