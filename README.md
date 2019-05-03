@@ -1,3 +1,5 @@
+This is not complete in any way... updating slowly... its painful
+
 
 # Setup Azure file share storage
 
