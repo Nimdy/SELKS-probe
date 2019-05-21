@@ -11,10 +11,8 @@ https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-
 
 # Setup Filebeat Server
 
+Install filebeat:
 
--Add how to mount to file share storage
-
-MORE TO COME:
 https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation.html
 
 Configure filebeat.yml with this following information: 
@@ -43,7 +41,24 @@ output:
 ```
 
 
--Add configurations examples to collect all logs and push to SELKS logstash.
+Mount Azure fileshare to or your own path
+
+```sh
+/mnt/log
+```
+Start filebeat
+
+```sh
+service filebeat start
+```
+
+Validate filebeat is connected to SELKS logstash
+
+```sh
+tail -f /var/log/filebeat/filebea
+```
+
+
 
 # SELKS-probe
 
@@ -58,7 +73,7 @@ Add ansible scripts to reboot/update probes.
 
 Quick and dirty, more to come:
 
-In a nutshell: Install a lightweight server (CentOS or Ubuntu), this is required because of the SMB3 requirements and if you want more security, then SMB3>SMB2+. Currently SELKS is built on Debian 9 but the kernel at this time, does not support SMB3.
+In a nutshell: Install a lightweight server (CentOS or Ubuntu), this is required because of the SMB3 requirements and if you want more security, then SMB3>SMB2+. Currently SELKS is built on Debian 9 but the kernel at this time, does not support SMB3. If you upgrade the kernel on SELKS, then you can use the filebeat service on SELKS.
 
 After you have install the Linux OS, install Suricata(CentOs or Ubuntu):
 
