@@ -19,7 +19,29 @@ https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation.htm
 
 Configure filebeat.yml with this following information: 
 
-( I will add my configs later, basically point it to SELKS logstash server for processing and configure the SMB3 file share paths.  These paths will be determined during your mounting step to the file share in Azure )
+Filebeat.yml
+
+filebeat:
+
+  prospectors:
+
+    - type: log
+      paths:
+        - /mnt/log/*.json
+
+processors:
+  - drop_fields:
+      when:
+        has_fields: ['host']
+      fields:
+        - 'host'
+
+output:
+  logstash:
+    hosts:
+      - IPADDRESS TO SELKS:5044
+
+
 
 -Add configurations examples to collect all logs and push to SELKS logstash.
 
