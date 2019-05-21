@@ -20,7 +20,7 @@ https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation.htm
 Configure filebeat.yml with this following information: 
 
 Filebeat.yml
-
+```sh
 filebeat:
 
   prospectors:
@@ -40,7 +40,7 @@ output:
   logstash:
     hosts:
       - IPADDRESS TO SELKS:5044
-
+```
 
 
 -Add configurations examples to collect all logs and push to SELKS logstash.
